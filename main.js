@@ -2,9 +2,13 @@ const { app, BrowserWindow, ipcMain } = require('electron');
 
 const path = require('path')
 const url = require('url')
+
+
 const SerialPort = require('serialport');
 const Readline = require('@serialport/parser-readline');
 
+/* 
+// Move this to a separate file and encapsulate it.
 const port = new SerialPort('COM3', { baudRate: 115200 });
 const parser = port.pipe(new Readline({ delimiter: '\n' }));// Read the port data
 
@@ -21,6 +25,7 @@ ipcMain.on('com-write', (event, args) => {
     port.write(args + '\n');
     console.log('written: ' + args);
 })
+*/
 
 let mainWindow
 

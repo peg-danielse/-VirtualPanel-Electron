@@ -23,6 +23,7 @@
     "electron-rebuild": "^2.3.5"
   },
   "dependencies": {
+    "node-ssdp": "^4.0.1",
     "serialport": "^9.0.7"
   }
 }
